@@ -4,6 +4,10 @@
 
 I built Lexicon to be an easy to deploy, uber-simple, some-what quirky, solution for anyone's own "personal" website. Use it to catalog the ever-evolving definition of your life, and share all your other various profiles and accomplishments, in one place, your own website.
 
+### Examples:
+- [KristopherBolleter.com](https://kristopherbolleter.com)
+- [OliverRay.com](https://oliverray.com)
+
 Author: [KristopherRay.com](https://kristopherray.com)
 
 *built with [Hugo](https://gohugo.io)* and :heart:
