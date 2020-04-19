@@ -44,3 +44,4 @@ collections:
     fields:
       - {label: "Definition Reference Title (unused)", name: "title", widget: "string"}
       - {label: "Definition", name: "body", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "number", min: 1, max: 100}

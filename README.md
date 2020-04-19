@@ -27,5 +27,13 @@ If you follow the tutorial, all the settings and configurations can be configure
  
 | YAML Variable | Content |  Description  |
 | ----------- | ----------- | ----------- |
-| title | Your Name |  Used as the h1 and meta-title
-| part | Part of Speech | Select from Noun, Verb, Adjective, Pronoun, Adverb, Preposition, Conjunction, Interjection
+| animation | Animation | Select from Flip In, Fade In, Slide In Left, Slide In Right, Bounce |
+| title | Your Name |  Used as the h1 and meta-title |
+| decription | Meta Description | Used for all open-graph and meta-data descriptions |
+| partOfSpeech | Part of Speech | Select from Noun, Verb, Adjective, Pronoun, Adverb, Preposition, Conjunction, Interjection |
+| pronunciation | Pronunciation | How does it sound? |
+| synonyms | Synonyms | What else are you known by? |
+| social (optional) | Social Network | Link to your favorite social networks, currently supported (but hidden if not used) Email, Facebook, Twitter, Instagram LinkedIn, Dribbble, Github, Last.fm
+
+### Definitions
+Definitions are the long-form body of your description. Currently supports up to 100 entries, and they can be ordered with the "Order" Variable. The title of each entry will be ignored and is only used for reference in NetlifyCMS.
