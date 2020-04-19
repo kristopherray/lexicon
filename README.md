@@ -17,7 +17,7 @@ Author: [KristopherRay.com](https://kristopherray.com)
 - Github Repository
 - NetlifyCMS (packaged in this Repository)
 
-**Local Dependancies:**
+**Local Dependancies: (optional)**
 - [ >= Hugo v0.69.0 - Extended](https://github.com/gohugoio/hugo/releases/tag/v0.69.0)  
 For more information on using Hugo [View the Documentation](https://gohugo.io/documentation/)
 
