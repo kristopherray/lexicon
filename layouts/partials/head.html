@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta property="og:type" content="website"/>
+
+    <title>{{ .Title }}</title>
+    <meta name="twitter:title" content="{{ .Title }}"/>
+    <meta property="og:title" content="{{ .Title }}"/>
+    <meta property="og:site_name" content="{{ .Title }}"/>
+
+    <meta name="description" content="{{ .Description }}"/>
+    <meta property="og:description" content="{{ .Description }}"/>
+    <meta name="twitter:description" content="{{ .Description }}"/>
+
+    <meta property="og:url" content="{{ .Permalink }}"/>
+    <meta name="twitter:url" content="{{ .Permalink }}"/>
+
+    {{ if .Params.og_img }}
+    <meta property="og:image" content='{{ .Param "og_img" }}'/>
+    <meta property="twitter:image" content='{{ .Param "og_img" }}'/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="628"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    {{ end }}
+
+    {{ if .Params.twitter_user }}
+    <meta name="twitter:site" content='@{{ .Param "twitter_user" }}' />
+    <meta name="twitter:creator" content='@{{ .Param "twitter_user" }}' />
+    {{ end }}
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    {{ $sass := resources.Get "css/style.scss" }}
+    {{ $style := $sass | resources.ToCSS | minify }}
+
+    <link rel="stylesheet"
+          href="{{ $style.Permalink }}"
+          media="screen">
+
+    {{ if .Params.google_analytics }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id={{ .Param "google_analytics" }}'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ .Param "google_analytics" }}');
+    </script>
+    {{ end }}
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>

@@ -1,0 +1,45 @@
+{{ partial "head.html" . }}
+
+<body>
+
+<main>
+
+    <div>
+        <h1 id="title" class='animated {{ .Param "animation" }}'>{{ .Title }}, <em>{{ .Param "part_of_speech" }}</em></h1>
+
+        {{ if .Params.pronunciation }}
+        <h2 id="pronunciation" class='animated {{ .Param "animation" }}'>[<em>{{ .Param "pronunciation" }}</em>]</h2>
+        {{ end }}
+
+        {{ if .Params.synonyms }}
+        <h3 class='animated {{ .Param "animation" }}'>Synonyms: <em>{{ .Param "synonyms" }}</em></h3>
+        {{ end }}
+        <ul id="definition" class='animated {{ .Param "animation" }}'>
+
+            {{ range (.Site.RegularPages.ByParam "order") }}
+
+            <li>{{ .Content }}</li>
+
+            {{ end }}
+
+        </ul>
+
+        {{ partial "social.html" .}}
+    </div>
+
+</main>
+
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

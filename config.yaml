@@ -1,0 +1,13 @@
+baseURL:
+languageCode: en-us
+title:
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+enableRobotsTXT: true
+markup:
+  defaultMarkdownHandler: blackfriday
+  blackFriday:
+    plainIDAnchors: true
+    hrefTargetBlank: true

@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  repo: your-username/repository-name
+  branch: master
+media_folder: "static/img"
+public_folder: "/img"
+collections:
+  - name: "home"
+    label: "Settings"
+    files:
+      - label: "Settings"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - label: "Animation"
+            name: "animation"
+            widget: "select"
+            options:
+             - { label: "Fade In", value: "fadeIn" }
+             - { label: "Bounce", value: "bounce" }
+             - { label: "Flip", value: "flip" }
+             - { label: "Slide In Left", value: "slideInLeft" }
+             - { label: "Slide In Right", value: "slideInRight" }
+            default: ["fadeIn"]
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "text", required: false}
+          - {label: "Part of Speech", name: "partOfSpeech", widget: "select", options: ["noun", "pronoun", "verb", "adverb", "interjection", "preposition", "conjunction", "adjective" ]}
+          - {label: "Pronunciation", name: "pronunciation", widget: "string", required: false}
+          - {label: "Synonyms", name: "synonyms", widget: "string", required: false}
+          - {label: "Email", name: "email", widget: "string", required: false}
+          - {label: "Facebook Link", name: "facebook", widget: "string", required: false}
+          - {label: "Twitter Link", name: "twitter", widget: "string", required: false}
+          - {label: "Twitter Username", name: "twitterUser", widget: "string", required: false}
+          - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
+          - {label: "LinkedIn Link", name: "linkedin", widget: "string", required: false}
+          - {label: "Dribble Link", name: "dribbble", widget: "string", required: false}
+          - {label: "Github Link", name: "github", widget: "string", required: false}
+          - {label: "Lastfm Link", name: "lastfm", widget: "string", required: false}
+  - name: "definitions"
+    label: "Definitions"
+    folder: "content/definitions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Definition Reference Title (unused)", name: "title", widget: "string"}
+      - {label: "Definition", name: "body", widget: "markdown"}
