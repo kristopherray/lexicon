@@ -1,5 +1,6 @@
 # Lexicon
 ## A Personal Dictionary Theme Website
+[Setup Tutorial](https://docs.google.com/document/d/1wd_NZh5QIBBUOIrcPCL0HG_RsEcF9e9A_sl1IXvw7I8/edit?usp=sharing)
 
 I built Lexicon to be an easy to deploy, uber-simple, some-what quirky, solution for anyone's own "personal" website. Use it to catalog the ever-evolving definition of your life, and share all your other various profiles and accomplishments, in one place, your own website.
 
@@ -16,7 +17,7 @@ Author: [KristopherRay.com](https://kristopherray.com)
 - [ >= Hugo v0.69.0 - Extended](https://github.com/gohugoio/hugo/releases/tag/v0.69.0)  
 For more information on using Hugo [View the Documentation](https://gohugo.io/documentation/)
 
-### [How to Launch a Website with Lexicon :link:](#)
+### [How to Launch a Website with Lexicon :link:](https://docs.google.com/document/d/1wd_NZh5QIBBUOIrcPCL0HG_RsEcF9e9A_sl1IXvw7I8/edit?usp=sharing)
 Follow the steps in this tutorial I wrote (less than 10), and you'll have your very own website up in 30 minutes or less! And there are even 'lite' customization options available, make it your own. 
 
 ### Configuration Options
