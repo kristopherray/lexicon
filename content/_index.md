@@ -1,6 +1,6 @@
 ---
 title: John Bon Doe
-partOfSpeech: pronoun
+part_of_speech: pronoun
 pronunciation: Jyawwnn Dough
 synonyms: Jonny, Jon Bon Doughy
 description: >-

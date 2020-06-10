@@ -24,7 +24,7 @@ collections:
             default: ["fadeIn"]
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Meta Description", name: "description", widget: "text", required: false}
-          - {label: "Part of Speech", name: "partOfSpeech", widget: "select", options: ["noun", "pronoun", "verb", "adverb", "interjection", "preposition", "conjunction", "adjective" ]}
+          - {label: "Part of Speech", name: "part_of_speech", widget: "select", options: ["noun", "pronoun", "verb", "adverb", "interjection", "preposition", "conjunction", "adjective" ]}
           - {label: "Pronunciation", name: "pronunciation", widget: "string", required: false}
           - {label: "Synonyms", name: "synonyms", widget: "string", required: false}
           - {label: "Email", name: "email", widget: "string", required: false}
